@@ -30,11 +30,13 @@ reviewing code, generating docs, synthesizing research, and automating operation
 - Delete unused code — don't leave dead code or backwards-compat shims
 
 ### File Organization
-- Agent definitions live in `agents/` — each agent has `system-prompt.md`, `tools.md`, `test.md`
-- Shared prompts and templates live in `prompts/`
-- Skills and reusable patterns live in `skills/`
-- Docs and specs live in `docs/`
-- Configuration and onboarding live in `config/`
+- Team context and active project work live in `product-team/`
+- All system internals live in `system/`:
+  - `system/agents/` — agent definitions (`system-prompt.md`, `tools.md`, `test.md`)
+  - `system/prompts/` — shared templates (PRDs, tickets, release notes, summaries)
+  - `system/skills/` — reusable patterns and workflows
+  - `system/docs/` — architecture and system documentation
+  - `system/config/` — configuration templates and onboarding
 
 ### Knowledge Flow
 Work moves deliberately between four layers — never automatically:
@@ -47,7 +49,7 @@ See `PROMOTION.md` for the full workflow and trigger phrases.
 ### Per-User Configuration
 Each PM has a personal `CLAUDE.md` in `~/Documents/Nanovest/CLAUDE.md`.
 It configures their local paths, Drive folder IDs, and domain context.
-Template: `config/pm-claude-template.md`. **Never commit a personal CLAUDE.md to GitHub.**
+Template: `system/config/pm-claude-template.md`. **Never commit a personal CLAUDE.md to GitHub.**
 
 ### Promotion Rules (enforce in every session)
 - Never write to Shared Drive without explicit "share this with the team"
