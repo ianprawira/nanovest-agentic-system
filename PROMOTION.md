@@ -83,26 +83,20 @@ Operations/        → Meeting Notes/ (by quarter), Weekly Updates/, Decisions L
 
 ---
 
-## Layer 4: GitHub
+## Layer 4: GitHub (Shared Storage)
 
-**What it is:** The `NanovestAgenticSystem` repo. Engineers can see this.
+**What it is:** The `NanovestAgenticSystem` repo. Treated as shared team storage — like a structured Google Drive for engineering and product assets. Engineers can see this.
 
 **What belongs here:** Agent definitions, prompt templates, reusable skills, system docs.
 **What does NOT belong here:** PRDs, meeting notes, research, personal drafts — those stay in Drive.
 
-**How to trigger:** Say "update the template" or "commit this to the repo."
+**How to trigger:** Say "update the template", "commit this to the repo", or "push this."
 
 **What Claude does:**
 1. Shows you a diff of what would change vs. the current file
 2. Waits for your confirmation
-3. Writes the file to your local clone of the repo
-4. Provides a commit message for you to review
-5. **You run the git commands** — Claude does not push automatically:
-   ```
-   git add [file]
-   git commit -m "[message Claude provided]"
-   git push
-   ```
+3. Writes the file, commits with a clear message, and pushes directly to the branch
+4. Reports the commit hash and push status when done
 
 **Use this when:** A pattern or template has been refined through real use and should become
 the new standard for the whole team.
@@ -118,7 +112,7 @@ These are set in your personal `CLAUDE.md`. They apply in every session:
 - Always show what will be written before writing it
 - Warn about visibility when promoting to Shared Drive
 - Warn about engineer visibility when promoting to GitHub
-- Never push to GitHub — the PM always reviews and runs git push manually
+- Claude may commit, push, and merge to GitHub directly after confirmation — no manual git step required
 
 ---
 
@@ -129,7 +123,7 @@ These are set in your personal `CLAUDE.md`. They apply in every session:
 | Save a draft locally | Claude saves to `drafts/` automatically |
 | Back up to my private Drive | "Save this to my Drive" |
 | Share with the team | "Share this with the team" |
-| Make a template official | "Update the template" or "Commit this" |
+| Make a template official | "Update the template", "Commit this", or "Push this" |
 | Undo a local draft change | Ask Claude to revert, or use file history |
 
 ---

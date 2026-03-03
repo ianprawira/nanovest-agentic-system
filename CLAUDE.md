@@ -37,11 +37,12 @@ reviewing code, generating docs, synthesizing research, and automating operation
 - Configuration and onboarding live in `config/`
 
 ### Knowledge Flow
-Work moves deliberately between four layers — never automatically:
+Work moves deliberately between four layers — always on explicit instruction:
 ```
 [ Local Draft ]  →  [ Personal Drive ]  →  [ Shared Drive ]  →  [ GitHub ]
-   (private)         (personal backup)      (team-visible)     (eng-visible)
+   (private)         (personal backup)      (team-visible)     (shared storage)
 ```
+GitHub is treated as shared team storage (like Google Drive). Claude can commit, push, and merge directly once confirmed.
 See `PROMOTION.md` for the full workflow and trigger phrases.
 
 ### Per-User Configuration
@@ -53,7 +54,7 @@ Template: `config/pm-claude-template.md`. **Never commit a personal CLAUDE.md to
 - Never write to Shared Drive without explicit "share this with the team"
 - Never write to GitHub without explicit "update the template" or "commit this"
 - Always confirm filename and target folder before writing anywhere
-- Never run `git push` — the PM always reviews and pushes manually
+- This repo acts as shared storage (like Google Drive) — Claude may commit, push, and merge directly once changes are confirmed
 
 ### Agent Development
 - Each agent should have a clear, single responsibility
