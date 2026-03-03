@@ -30,7 +30,7 @@ reviewing code, generating docs, synthesizing research, and automating operation
 - Delete unused code — don't leave dead code or backwards-compat shims
 
 ### File Organization
-- Team context and active project work live in `teams/`
+- Team context and active project work live in `product-team/`
 - All system internals live in `system/`:
   - `system/agents/` — agent definitions (`system-prompt.md`, `tools.md`, `test.md`)
   - `system/prompts/` — shared templates (PRDs, tickets, release notes, summaries)

@@ -1,4 +1,4 @@
-# Teams
+# Product Team
 
 > Placeholder — overview of all teams using the Nanovest Agentic System.
 
@@ -10,9 +10,10 @@ Each team has its own directory with a `CLAUDE.md` for team-specific agent instr
 
 | Team | Sub-teams | Description |
 |------|-----------|-------------|
-| asset | asset-growth, crypto, stocks-gold | Asset management teams |
+| asset | asset-growth, crypto, us-stocks, hk-cn-stocks, gold | Asset management teams |
 | service | platform, user-growth | Platform and growth service teams |
 | wealth | — | Wealth management team |
+| department | — | Cross-team initiatives (product KPIs, company-wide decisions) |
 
 ## Conventions
 

@@ -1,6 +1,6 @@
-# Stocks & Gold — Projects
+# Department — Projects
 
-> Placeholder — list of active projects for the Stocks & Gold sub-team.
+> Placeholder — list of active cross-team projects and initiatives.
 
 ## Active Projects
 
