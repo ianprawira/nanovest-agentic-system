@@ -6,7 +6,7 @@
 
 | Project | Status | Description |
 |---------|--------|-------------|
-| — | — | No active projects yet |
+| [funnel-optimization](funnel-optimization.md) | Active | Analyze and optimize the user funnel to increase unique traded assets per user |
 
 ## Completed Projects
 
